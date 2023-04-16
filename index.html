@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="overlay overlay--hidden"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo-box">
+          <img src="./images/logo.svg" alt="snap logo" class="logo" />
+        </div>
+        <div class="header__nav-container">
+          <ul class="header__nav">
+            <li>
+              <button type="button" class="header__nav__btn">
+                <span>Features</span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down icon"
+                  class="arrow-icon"
+                />
+              </button>
+              <div class="nav__dropdown__container">
+                <ul class="nav__dropdown">
+                  <li
+                    class="nav__dropdown__link nav__dropdown__link--todo-list"
+                  >
+                    <a href="">
+                      <img src="./images/icon-todo.svg" alt="Notepad icon" />
+                      Todo List
+                    </a>
+                  </li>
+                  <li class="nav__dropdown__link nav__dropdown__link--calendar">
+                    <a href="#"
+                      ><img
+                        src="./images/icon-calendar.svg"
+                        alt="Calendar icon"
+                      />
+                      Calendar</a
+                    >
+                  </li>
+                  <li
+                    class="nav__dropdown__link nav__dropdown__link--reminders"
+                  >
+                    <a href="#"
+                      ><img src="./images/icon-reminders.svg" alt="Bell icon" />
+                      Reminders</a
+                    >
+                  </li>
+                  <li class="nav__dropdown__link nav__dropdown__link--planning">
+                    <a href="#"
+                      ><img src="./images/icon-planning.svg" alt="Clock icon" />
+                      Planning</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="header__nav__btn">
+                <span>Company</span
+                ><img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow down icon"
+                  class="arrow-icon"
+                />
+              </button>
+              <div class="nav__dropdown__container nav__dropdown--company">
+                <ul class="nav__dropdown">
+                  <li
+                    class="nav__dropdown__link nav__dropdown__link--todo-list"
+                  >
+                    <a href="#">History</a>
+                  </li>
+                  <li class="nav__dropdown__link nav__dropdown__link--calendar">
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li
+                    class="nav__dropdown__link nav__dropdown__link--reminders"
+                  >
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="header__nav__btn">Careers</button>
+            </li>
+            <li>
+              <button type="button" class="header__nav__btn">About</button>
+            </li>
+          </ul>
+          <div class="header__btn-container">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Register</a>
+          </div>
+        </div>
+        <button type="button" class="menu-btn">
+          <img
+            src="./images/icon-menu.svg"
+            alt="Menu button"
+            name="menu-icon"
+            class="btn-icon"
+          />
+          <img
+            src="./images/icon-close-menu.svg"
+            alt="Close icon"
+            name="close-icon"
+            class="btn-icon"
+          />
+        </button>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main__text-box">
+            <h1 class="main__heading">Make remote work</h1>
+            <p class="main__description">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="#" class="main__btn">Learn more</a>
+            <div class="main__partners-container">
+              <img
+                src="./images/client-databiz.svg"
+                alt="databiz logo"
+                class="partner-logo"
+              />
+              <img
+                src="./images/client-audiophile.svg"
+                alt="audiophile logo"
+                class="partner-logo"
+              />
+              <img
+                src="./images/client-meet.svg"
+                alt="meet logo"
+                class="partner-logo"
+              />
+              <img
+                src="./images/client-maker.svg"
+                alt="maker logo"
+                class="partner-logo"
+              />
+            </div>
+          </div>
+          <div
+            class="main__img-box"
+            role="img"
+            aria-label="A person working on a laptop"
+          ></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
