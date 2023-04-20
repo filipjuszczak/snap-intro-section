@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 62.5%;
-}
-
 body {
   position: relative;
   font-family: 'Epilogue', sans-serif;
@@ -25,7 +21,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: hsla(0 0% 0% / 0.3);
   z-index: 1;
   visibility: visible;
   opacity: 1;
@@ -43,16 +39,16 @@ body {
 .header {
   display: flex;
   align-items: center;
-  gap: 6.2rem;
-  margin-bottom: 5rem;
-  padding-top: 4.8rem;
+  gap: 3.875rem;
+  margin-bottom: 3.125rem;
+  padding-top: 3rem;
 }
 
 .header__logo-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 4.8rem;
+  margin-left: 3rem;
 }
 
 .header__nav-container {
@@ -64,7 +60,7 @@ body {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 3rem;
   list-style: none;
 }
 
@@ -75,18 +71,18 @@ body {
 .header__nav__btn {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.625rem;
   font-family: inherit;
-  font-size: 1.6rem;
-  padding: 1.2rem;
+  font-size: 1rem;
+  padding: 0.75rem;
   border: none;
   cursor: pointer;
   background: transparent;
-  color: hsl(0, 0%, 41%);
+  color: hsl(0 0% 41%);
 }
 
 .header__nav__btn:hover {
-  color: hsl(0, 0%, 8%);
+  color: hsl(0 0% 8%);
 }
 
 .arrow-icon--open {
@@ -108,7 +104,7 @@ body {
   position: absolute;
   top: 100%;
   left: -50%;
-  box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 10px 20px hsla(0 0% 0% / 0.1);
   border-radius: 9px;
 }
 
@@ -121,12 +117,11 @@ body {
 }
 
 .nav__dropdown {
-  padding: 2.4rem;
-  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-size: 0.9375rem;
   border-radius: 9px;
-
-  color: hsl(0, 0%, 41%);
-  background-color: hsl(0, 0%, 100%);
+  color: hsl(0 0% 41%);
+  background-color: hsl(0 0% 100%);
   list-style: none;
   box-shadow: none;
 }
@@ -138,21 +133,21 @@ body {
 .nav__dropdown__link {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
-  margin-bottom: 2rem;
+  gap: 0.875rem;
+  margin-bottom: 1.25rem;
 }
 
 .nav__dropdown__link a:link,
 .nav__dropdown__link a:visited {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 0.875rem;
   text-decoration: none;
-  color: hsl(0, 0%, 41%);
+  color: hsl(0 0% 41%);
 }
 
 .nav__dropdown__link img {
-  width: 1.6rem;
+  width: 1rem;
 }
 
 .nav__dropdown__link:last-of-type {
@@ -161,8 +156,8 @@ body {
 
 .header__btn-container {
   display: flex;
-  gap: 3.2rem;
-  margin-right: 4.8rem;
+  gap: 2rem;
+  margin-right: 3rem;
 }
 
 .logo {
@@ -171,67 +166,66 @@ body {
 
 .btn:link,
 .btn:visited {
-  padding: 1.6rem 2.8rem;
-  font-size: 1.6rem;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
   text-decoration: none;
-  color: hsl(0, 0%, 41%);
+  color: hsl(0 0% 41%);
   transition: all 200ms;
 }
 
 .btn:hover,
 .btn:active {
-  color: hsl(0, 0%, 8%);
+  color: hsl(0 0% 8%);
 }
 
 .btn:last-of-type {
-  box-shadow: inset 0 0 0 2px hsl(0, 0%, 41%);
+  box-shadow: inset 0 0 0 2px hsl(0 0% 41%);
   border-radius: 11px;
 }
 
 .btn:last-of-type:hover {
-  box-shadow: inset 0 0 0 2px hsl(0, 0%, 8%);
+  box-shadow: inset 0 0 0 2px hsl(0 0% 8%);
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 81.25rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 6.2rem;
+  gap: 3.875rem;
 }
 
 .main__heading {
   width: 95%;
-  font-size: 8.8rem;
-  margin-bottom: 6.2rem;
-  padding-top: 8.2rem;
+  font-size: 5.5rem;
+  margin-bottom: 3.875rem;
+  padding-top: 5.125rem;
 }
 
 .main__description {
   width: 75%;
-  margin-bottom: 6.2rem;
-  font-size: 1.8rem;
+  margin-bottom: 3.875rem;
+  font-size: 1, 125rem;
   line-height: 1.5;
-  color: hsl(0, 0%, 41%);
+  color: hsl(0 0% 41%);
 }
 
 .main__btn {
   display: inline-block;
-
-  padding: 2.4rem 3.2rem;
-  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.125rem;
   text-decoration: none;
   border-radius: 15px;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
+  color: hsl(0 0% 100%);
+  background-color: hsl(0 0% 0%);
 }
 
 .main__partners-container {
   display: flex;
   align-items: center;
-  gap: 5.2rem;
-  margin-top: 10rem;
+  gap: 3.25rem;
+  margin-top: 6.25rem;
 }
 
 .main__img-box {
